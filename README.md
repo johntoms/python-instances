@@ -1,4 +1,6 @@
 # README
+
+> 该环境为 python3 .
 ## test_timeit.py
 > 虽然 python 是一个脚本语言,相对于现在的电脑硬件已不成问题,但当数据量较大的时候一些方法的选择也会影响整体的性能,为了验证某一些方法的快慢,所以
 ,研究了一下一些简单的方法的快慢.
@@ -85,7 +87,9 @@ In [8]: timeit([yy.append(i) for i in range(10)])
 
 ```
 
+## base_python_knowledge
 
+> 该包下为学习和记录常用 python 基础知识
 
 
 
