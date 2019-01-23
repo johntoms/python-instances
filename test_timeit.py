@@ -19,11 +19,19 @@ print("a['a'] ==> time:", timeit.timeit('a["a"]', setup="from __main__ import a"
 
 
 """
+第一次:
 a.get('a') ==> time: 0.128667385
 a.get('b') ==> time: 0.08460908200000003
 a['a'] ==> time: 0.036344544000000034
 
-结论: [] 取值方式较快,get 方式取值较慢,速度大约快3倍左右,但在 ipython 中操作时,时间大约快两倍左右.
+第二次:
+a.get('a') ==> time: 0.15359808400000002
+a.get('b') ==> time: 0.09191381800000001
+a['a'] ==> time: 0.037859067999999996
+
+- ipython 内大约快2倍左右
+
+结论: [] 取值方式较快,get 方式取值较慢.
 """
 
 print(timeit.repeat("sum(range(1,100001))", repeat=5, number=1000))
