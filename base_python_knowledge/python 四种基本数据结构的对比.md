@@ -2,6 +2,12 @@
 
 [TOC]
 
+> 本质上的区别
+
+最重要的区别在于**是否可变**，**是否有序**这两个维度，可以分成4个象限，如下图：
+
+![python 四种基本数据类型比较](https://oss-md-pictures.oss-cn-hangzhou.aliyuncs.com/python%20%E5%9B%9B%E7%A7%8D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%AF%B9%E6%AF%94.png)
+
 ## list
 
 > list是Python内置的一种数据类型是列表，是一种有序的集合，可以随时添加和删除其中的元素。
