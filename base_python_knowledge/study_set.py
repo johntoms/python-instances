@@ -18,6 +18,9 @@ __CreateTime__ = '2019/1/29'
 tuple = ('1','2','3')
 egg_dict1 = {'value0', 'value1', 'value2'}
 egg_dict2 = set(['value1', 'value2', 'value3'])
+set1 = set(['1',2,3])
+print(type(set1))
+print(set1)
 print(type(egg_dict1))
 print(type(egg_dict2))
 
