@@ -7,7 +7,8 @@ __CreateTime__ = '2019/5/28'
 import logging.config
 import yaml
 import os
-
+import pprint
+base_path = os.path.abspath(os.path.dirname(__file__))
 
 def set_logging():
     # 检查是否存在 日志 存放的目录
@@ -15,7 +16,7 @@ def set_logging():
         os.mkdir('logs')
 
     # 检查配置文件是否存在
-    config_dir = './config.yaml'
+    config_dir = base_path + '/config.yaml'
     if not os.path.exists(config_dir):
         raise FileNotFoundError
 
@@ -24,6 +25,13 @@ def set_logging():
         config = yaml.safe_load(f.read())
 
     if config:
+        # 设置默认配置日志文件位置 默认位置为：/tmp/debug.log && /tmp/warning.log
+        if not config.get('handlers').get('debug_file_handler').get('filename'):
+            config['handlers']['debug_file_handler']['filename'] = '/tmp/debug.log'
+        if not config.get('handlers').get('warning_file_handler').get('filename'):
+            config['handlers']['warning_file_handler']['filename'] = '/tmp/warning.log'
+
+        # 配置文件载入 logging 模块
         logging.config.dictConfig(config=config)
     else:
         raise IOError("config.yaml file doesn't exist")
