@@ -23,24 +23,25 @@ $ pip install retry
 ### retry decorator
 ```
 def retry(exceptions=Exception, tries=-1, delay=0, max_delay=None,backoff=1, jitter=0, logger=logging_logger): 
-    """Return a retry decorator.
+    """ 
+    Return a retry decorator.
     
-        :param exceptions: an exception or a tuple of exceptions to catch. default: Exception.
-        :param tries: the maximum number of attempts. default: -1 (infinite).
-        :param delay: initial delay between attempts. default: 0.
-        :param max_delay: the maximum value of delay. default: None (no limit).
-        :param backoff: multiplier applied to delay between attempts. default: 1 (no backoff).
-        :param jitter: extra seconds added to delay between attempts. default: 0.
-                       fixed if a number, random if a range tuple (min, max)
-        :param logger: logger.warning(fmt, error, delay) will be called on failed attempts.
-                       default: retry.logging_logger. if None, logging is disabled.
-        """
+    :param exceptions: an exception or a tuple of exceptions to catch. default: Exception.
+    :param tries: the maximum number of attempts. default: -1 (infinite).
+    :param delay: initial delay between attempts. default: 0.
+    :param max_delay: the maximum value of delay. default: None (no limit).
+    :param backoff: multiplier applied to delay between attempts. default: 1 (no backoff).
+    :param jitter: extra seconds added to delay between attempts. default: 0.
+                   fixed if a number, random if a range tuple (min, max)
+    :param logger: logger.warning(fmt, error, delay) will be called on failed attempts.
+                   default: retry.logging_logger. if None, logging is disabled.
+    """
         
     
     ## 中文翻译
     """
     返回一个重试装饰器。
-
+    
     :捕获的异常信息:要捕获的异常或异常元组。默认值:Excpeption。
     :重试的次数:最大尝试次数。默认值:-1(无限)。
     :延迟时间:尝试之间的初始延迟。默认值:0。
@@ -50,7 +51,7 @@ def retry(exceptions=Exception, tries=-1, delay=0, max_delay=None,backoff=1, jit
     如果是一个数字，则为固定值，如果为一个范围元组(最小，最大)，则采用范围内的随机数。
     :日志配置参数:记录器。失败尝试时将发出警告(fmt、错误、延迟)。
     默认值:retry.logging_logger。如果没有，则禁用日志记录。
-"""
+    """
 ```
 Various retrying logic can be achieved by combination of arguments.
 
@@ -99,7 +100,8 @@ if __name__ == '__main__':
 ## retry_call
 ```
 def retry_call(f, fargs=None, fkwargs=None, exceptions=Exception,tries=-1, delay=0, max_delay=None, backoff=1, jitter=0,logger=logging_logger):
-    """ Calls a function and re-executes it if it failed.
+    """
+    Calls a function and re-executes it if it failed.
 
     :param f: the function to execute.
     :param fargs: the positional arguments of the function to execute.
