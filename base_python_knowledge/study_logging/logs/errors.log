@@ -1,0 +1,8 @@
+2019-05-28 18:21:05,958
+File logging1.py, [ERROR] [lines: 33] this is error message
+2019-05-28 18:21:05,958
+File logging1.py, [CRITICAL] [lines: 34] this is critical message
+2019-05-29 09:52:12,908
+File t_logging.py, [ERROR] [lines: 14] this is error message
+2019-05-29 09:52:30,798
+File t_logging.py, [ERROR] [lines: 14] this is error message--

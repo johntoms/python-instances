@@ -1,0 +1,20 @@
+2019-05-28 18:21:05,957
+File logging1.py, [INFO] [lines: 30] this is info message
+2019-05-28 18:21:05,957
+File logging1.py, [WARNING] [lines: 31] this is warning message
+2019-05-28 18:21:05,958
+File logging1.py, [ERROR] [lines: 33] this is error message
+2019-05-28 18:21:05,958
+File logging1.py, [CRITICAL] [lines: 34] this is critical message
+2019-05-29 09:52:12,907
+File t_logging.py, [INFO] [lines: 12] this is info logging
+2019-05-29 09:52:12,908
+File t_logging.py, [WARNING] [lines: 13] this is warning message
+2019-05-29 09:52:12,908
+File t_logging.py, [ERROR] [lines: 14] this is error message
+2019-05-29 09:52:30,796
+File t_logging.py, [INFO] [lines: 12] this is info logging--
+2019-05-29 09:52:30,797
+File t_logging.py, [WARNING] [lines: 13] this is warning message--
+2019-05-29 09:52:30,798
+File t_logging.py, [ERROR] [lines: 14] this is error message--
