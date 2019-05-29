@@ -133,5 +133,5 @@ dmypy.json
 # customer defer
 
 /tmp/
-
+.idea/
 

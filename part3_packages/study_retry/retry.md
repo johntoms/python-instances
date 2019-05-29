@@ -1,8 +1,8 @@
 # Project description
  
-![https://pypip.in/d/retry/badge.png]
-![https://pypip.in/v/retry/badge.png]
-![https://pypip.in/license/retry/badge.png]
+![https://pypip.in/d/retry/badge.png](https://pypip.in/d/retry/badge.png)
+![https://pypip.in/v/retry/badge.png](https://pypip.in/v/retry/badge.png)
+![https://pypip.in/license/retry/badge.png](https://pypip.in/license/retry/badge.png)
 
 
 Easy to use retry decorator. 
@@ -139,6 +139,7 @@ def retry_call(f, fargs=None, fkwargs=None, exceptions=Exception,tries=-1, delay
 
 
 This is very similar to the decorator, except that it takes a function and its arguments as parameters. The use case behind it is to be able to dynamically adjust the retry arguments.
+
 这与decorator非常相似，只是它接受一个函数及其参数作为参数。它背后的用例是能够动态调整重试参数。
 
 ```
