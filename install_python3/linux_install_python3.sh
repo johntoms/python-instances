@@ -9,7 +9,7 @@
 ##############################################
 
 
-# 安装依赖包
+# 安装系统依赖包
 yum -y install zlib-devel bzip2 bzip2-devel openssl openssl-static openssl-devel \
 ncurses ncurses-devel sqlite sqlite-devel readline readline-devel tk tk-devel lzma gdbm \
 gdbm-devel db4-devel libpcap-devel xz xz-devel libffi-devel gcc
