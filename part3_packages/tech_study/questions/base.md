@@ -11,6 +11,7 @@
 # ==================================
 # 1. is 和 == 的区别？
 # ==================================
+
 # result
 is判断的是ID的地址
 ==判断的是数值
@@ -58,8 +59,6 @@ with open("./result.txt", "a") as f:
 3. 将不定数量的参数传递给一个函数
 
 
-# result
-
 def func(*args, **kwargs):
     for i in args():
         print(i)
@@ -76,7 +75,6 @@ def func(*args, **kwargs):
 # =========================
 # 在运维中你用过哪些 python 库或方法并简明该库或方法的作用？
 # =========================
-
 
 # result
 基础库：sys、os（os.path、os.stat）、time、logging、prarmiko、re、random
